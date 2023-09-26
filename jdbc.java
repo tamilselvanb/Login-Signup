@@ -69,8 +69,8 @@ public class jdbc{
                 System.out.println("You have successfully signed up!!!");
                 PreparedStatement ps= con.prepareStatement("Insert into login values(?,?,?,?,?)");
                 ps.setString(1,username);
-                ps.setString(2,password);
-                ps.setString(3,mail);
+                ps.setString(2,mail);
+                ps.setString(3,password);
                 ps.setString(4,qn);
                 ps.setString(5,ans);
                 ps.execute();
